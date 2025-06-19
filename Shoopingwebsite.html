@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionEase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">FashionEase</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Sale</a></li>
+                <li class="cart-icon">
+                    🛒
+                    <span class="cart-count">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">All Items</button>
+            <button class="filter-btn" onclick="filterProducts('men')">Men</button>
+            <button class="filter-btn" onclick="filterProducts('women')">Women</button>
+            <button class="filter-btn" onclick="filterProducts('kids')">Kids</button>
+            <button class="filter-btn" onclick="filterProducts('sale')">On Sale</button>
+        </div>
+
+        <div class="products" id="products-container">
+            <!-- Products will be added by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns & Exchanges</a>
+            <a href="#">FAQ</a>
+        </div>
+        <p>&copy; 2023 FashionEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
